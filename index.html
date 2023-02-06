@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c58a1c4fcd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MikkoJardenico | Portfolio</title>
+</head>
+<body>
+
+    <div class="pop-up" id="pop-up">
+        <button onclick="hide()" class="hide-btn" id="hide-btn"><i class="fas fa-times"></i></button>
+
+        <h1>Want to hire <span>ME?</span></h1>
+        <br>
+        <p>Please Fill the form and leave a message.</p>
+        <br>
+        <input type="text" placeholder="Enter Name">
+        <input type="text" placeholder="Enter Email">
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Message Here"></textarea>
+        <br>
+        <button>Send</button>
+    </div>
+
+    <div class="top-nav-mobile" id="top-nav-mobile">
+        <button onclick="hideNav()"><i class="fas fa-times"></i></button>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#blog">BLOG</a>
+        <a href="#more">MORE</a>
+    </div>
+
+    <div class="grid-container"  id="home">
+
+        <div class="item item-1">
+            <div class="logo">
+                <header>Mikko</header>
+            </div>
+            <div class="navigation">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#blog">BLOG</a>
+                <a href="#more">MORE</a>
+            </div>
+            <div class="button">
+                <a href="#" class="computer-view">CONTACT</a>
+                <a href="#" class="mobile-view" onclick="showNav()"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div class="item item-2">
+            <div class="hero-image">
+                <img src="assets/images/hero-image (2).jpg" alt="">
+            </div>
+            <div class="hero-text">
+                <header>Mikko Jardenico</header>
+                <h1>I'm a Web <span>Developer</span></h1>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique consectetur totam natus dolor quis vero accusamus, cum deleniti facilis iste corporis et sit nobis ratione fuga aliquam aspernatur sequi animi.</p>
+                <br>
+                <a href="#">Download CV</a>
+            </div>
+        </div>
+
+        <div class="item item-3"  id="about">
+            <div class="about-image">
+                <img src="assets/images/img-2.jpg">
+            </div>
+            <div class="about-text">
+                <h1>About <span>Me</span></h1>
+                <br>
+                <h3>Hello, I'm Mikko Jardenico</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima inventore impedit, quo obcaecati quas laborum minus ab praesentium corporis beatae sequi sit molestias exercitationem, officiis accusantium voluptate unde ex repellendus. Dignissimos optio cumque, eius dolorum quaerat ea labore quia laboriosam.</p>
+                <br>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="item item-4"  id="services">
+            <di class="greet">
+                <h1>Services</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </di>
+            <div class="card">
+                <i class="fa-solid fa-paint-roller"></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere soluta delectus similique asperiores nisi? Assumenda magni repellat laudantium. Praesentium, sapiente?</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere soluta delectus similique asperiores nisi? Assumenda magni repellat laudantium. Praesentium, sapiente?</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-feather"></i>
+                <h3>Content Writing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere soluta delectus similique asperiores nisi? Assumenda magni repellat laudantium. Praesentium, sapiente?</p>
+            </div>
+        </div>
+
+        <div class="item item-5"  id="blog">
+            <div class="blog-grid">
+                <div class="blog blog-page-1">
+                    <h1>Daily <span>Blog</span></h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est consequatur obcaecati quas exercitationem ipsam reprehenderit minus atque cumque dolorum quam?</p>
+                </div>
+                <div class="blog blog-page-2">
+                    <div class="blp-text">
+                        <h1>Latest Blog</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil cum, quos sapiente voluptates at minima odit nisi quam illo nostrum.</p>
+                    </div>
+                </div>
+                <div class="blog blog-page-3">
+                    <!-- temporary only -->
+                </div>
+                <div class="blog blog-page-4">
+                    <!-- temporary only -->
+                </div>
+                <div class="blog blog-page-5">
+                    <!-- temporary only -->
+                </div>
+            </div>
+        </div>
+
+        <div class="item item-6"  id="more">
+            <div class="foot-items">
+                <h3>More About <span>Me</span></h3>
+                <br>
+                <a href="#" class="clickbtn">Click here</a>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolore quibusdam repudiandae omnis quo obcaecati laudantium voluptatem, aperiam cumque deserunt rerum adipisci nam blanditiis ut consequatur culpa unde exercitationem facere.
+                </p>
+            </div>
+            <div class="foot-items">
+                <h3>Site Links</h3>
+                <br>
+                <ul>
+                    <li><a href="#">Not available yet</a></li>
+                    <li><a href="#">Not available yet</a></li>
+                    <li><a href="#">Not available yet</a></li>
+                    <li><a href="#">Not available yet</a></li>
+                </ul>
+            </div>
+            <div class="foot-items">
+                <h3>Company</h3>
+                <br>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="foot-items">
+                <h3>My Sites</h3>
+                <br>
+                <ul>
+                    <li><a href="#">ImagineDragons</a></li>
+                    <li><a href="#">TheTrumpet</a></li>
+                    <li><a href="#">D.I.O</a></li>
+                    <li><a href="#">GutsWell</a></li>
+                    <li><a href="#">AliveStocks</a></li>
+                    <li><a href="#">Game4Free</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item item-7">
+            <h1>Mikko.</h1>
+            <p><span>2022 - 2023</span>. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function hide(){
+            document.getElementById("pop-up").style.display = 'none';
+        }
+
+        function showOnTime(){
+            document.getElementById('pop-up').style.visibility = 'visible';
+        }
+        setInterval(showOnTime, 60000);
+
+        function showNav(){
+            document.getElementById('top-nav-mobile').style.display = "block";
+        }
+
+        function hideNav(){
+            document.getElementById('top-nav-mobile').style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
